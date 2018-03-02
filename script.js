@@ -7,8 +7,9 @@ var questions = document.getElementById('questions');
 var currentLife = document.getElementById('currentLife');
 var currentScore = document.getElementById('score');
 var status = document.getElementById('status');
-var answers = document.getElementById('answers');
+var userAnswers = document.getElementById('answers');
 var submit = document.getElementById('submit');
+var answers = 0;
 
 window.onload = function() {
   quizzes();
@@ -23,21 +24,19 @@ function quizzes() {
   currentLife.innerHTML = life;
   var index = Math.floor(Math.random() * operator.length)
   questions.innerHTML = num1 + ' ' + operator[index] + ' ' + num2;
-  var quest = questions.innerHTML;
 }
 
 submit.onclick = function() {checkAnswer()}
 
 function checkAnswer() {
-  if(answers === quest) {
+  answers = num1 + operator[index] + num2;
+  if(userAnswers.innerHTML === answers) {
     win();
   } else {
     lose();
   }
 }
 
-// submit.addEventListener("click", addScore());
-//
 // function addScore() {
 //   score = 0;
 //   life = 3;
