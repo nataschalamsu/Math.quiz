@@ -1,0 +1,73 @@
+body {
+  background-color: white;
+}
+
+header {
+  background-image: url(background1.jpg);
+  background-repeat: repeat;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#headtitle {
+  font-family: Russo One;
+}
+
+#slogan {
+  font-family: Orbitron;
+  font-size: 20px;
+}
+
+#container {
+  font-family: Orbitron;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  display: block;
+  padding: 10px 20px;
+  background-color: rgba(93, 173, 94, 0.7);
+  margin-top: 135;
+  padding-bottom: 240px;
+}
+
+#answers {
+  font-size: 25px;
+  width: 100px;
+  height: 50px;
+}
+
+#button {
+  border: 3px solid black;
+  background-color: white;
+  margin-left: 650;
+  margin-right: 650;
+  padding-top: 10;
+  padding-bottom: 10;
+}
+
+a:link {
+  text-decoration: none;
+  font-color: black;
+}
+
+a:hover {
+  color: orange;
+}
+
+footer {
+  font-family: Russo One;
+  font-weight: bold;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 25px;
+  width: 100%;
+  text-align: center;
+  display: block;
+  background-image: url(background1.jpg);
+  background-repeat: repeat;
+}
