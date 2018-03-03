@@ -12,4 +12,4 @@ This is a simple web app game about Mathematics. Enter your name first and just 
 
 **I hope I can develop this game in the future so it would be more interesting and fun. Enjoy the game!** :smile:
 
-:point-right: [**Click here**](https://nataschalamsu.github.io/Math.quiz/.) :point-left: to play Math.quiz
+:point_right: [**Click here**](https://nataschalamsu.github.io/Math.quiz/.) :point_left: to play Math.quiz
