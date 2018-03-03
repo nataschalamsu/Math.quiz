@@ -11,3 +11,4 @@ This is a simple web app game about Mathematics. Enter your name first and just 
 3. Javascript (JS)
 
 **I hope I can develop this game in the future so it would be more interesting and fun. Enjoy the game!** :smile:
+[Click here] (https://nataschalamsu.github.io/Math.quiz/.) to play Math.quiz
