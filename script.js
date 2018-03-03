@@ -3,9 +3,12 @@ var num1 = Math.round(Math.random() * 100 + 1);
 var num2 = Math.round(Math.random() * 100 + 1);
 var index = Math.floor(Math.random() * operator.length);
 var questions = document.getElementById('questions');
+var nameBox = document.getElementById('name');
+var userName = document.getElementById('yourName')
 var userStatus = document.getElementById('status');
 var userAnswers = document.getElementById('answers');
 var submit = document.getElementById('submit');
+var submitName = document.getElementById('submitName');
 var answers = 0;
 
 window.onload = function() {
@@ -27,7 +30,18 @@ function quizzes() {
   questions.innerHTML = num1 + ' ' + operator[index] + ' ' + num2;
 }
 
-submit.onclick = function() {checkAnswer()}
+submitName.onclick = function() {yourName()};
+
+function yourName() {
+  names = nameBox.value;
+  if(names !== '') {
+    userName.innerHTML = 'Hi! ' + names;
+  } else {
+    userName.innerHTML = 'Please enter your name'
+  }
+}
+
+submit.onclick = function() {checkAnswer()};
 
 function checkAnswer() {
   answerCalculate();
@@ -39,9 +53,9 @@ function checkAnswer() {
 }
 
 function lose() {
-  userStatus.innerHTML = 'You Lose! Try Again'
+  userStatus.innerHTML = 'Wrong! You Lose! Try Again'
 }
 
 function win() {
-  userStatus.innerHTML = 'You Win! Congratulations!'
+  userStatus.innerHTML = 'Correct! You Win! Congratulations!'
 }
