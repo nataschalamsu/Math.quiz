@@ -36,8 +36,10 @@ function yourName() {
   names = nameBox.value;
   if(names !== '') {
     userName.innerHTML = 'Hi! ' + names;
+    submit.disabled = false;
   } else {
-    userName.innerHTML = 'Please enter your name'
+    userName.innerHTML = 'Please enter your name';
+    submit.disabled = true;
   }
 }
 
